@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta lang="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This is a certificacion project, in that i will create my own Form</p>
+        <form id="survey-form">
+            <fieldset>
+            <label id="name-label">Name:
+                <input type="text" id="name" placeholder="Insert your name" value="contact" name="name" required />
+            </label>
+            </fieldset>
+            <fieldset>
+            <label id="email-label">Email:
+                <input type="email" id="email" placeholder="Insert your email" value="contact" name="email" required />
+            </label>
+            </fieldset>
+            <fieldset>
+            <label id="number-label">Age:
+                <input type="number" id="number" min="13" max="100" placeholder="Type your age" value="contact" name="number" required />
+            </label>
+            </fieldset>
+            <label>Select your favorite pet
+                <select id="dropdown">
+                    <option>select an option</option>
+                    <option>cat</option>
+                    <option>dog</option>
+                </select>
+            </label>
+            <fieldset>
+            <label>idontkno<input type="radio" value="options" name="checklist" /></label>
+            <label>idontknoversion2<input type="radio" value="options" name="checklist" /></label>
+            </fieldset>
+            <fieldset>
+                <label>what is your desire job</label>
+                <input type="checkbox" value="interest" />Back end Developer
+                <input type="checkbox" value="interest" /> Front end Developer
+            </fieldset>
+            <textarea>
+            </textarea>
+            <input type="submit" id="submit" />
+        </form>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+/* styles.css */
+
+.odds {
+ background-color: #ffa7a7;
+ font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+#weird {
+ color: #0000ff;
+ font-size: 36px;
+}
+
+.cooler {
+ font-size: 24px;
+}
+
+#other {
+ background-color: #80ff80;
+ font-weight: bold;
+}
