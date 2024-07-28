@@ -4,8 +4,14 @@ list_of_protagonists = {
     "Way of kings" : "Kaladin",
 }
 
+list_of_protagonists2 = {
+    "blue lock" : "Misashi",
+    "jujutsu kaisen" : "Guts",
+    "brand" : "Kaladin",
+}
 new_characters = {}
 
-for character in list_of_protagonists:
+new_characters = list_of_protagonists, list_of_protagonists2
 
+print(new_characters)
 
