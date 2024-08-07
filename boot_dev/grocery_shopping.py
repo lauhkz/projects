@@ -23,8 +23,15 @@ def calculate_total (items_purchased, grocery_list):
             purchased_items[item] = item_prices[item]
             total += item_prices[item]
 
+    for item in grocery_list:
+        if item not in items_purchased:
+            unpurchased_items = unpurchased_items[item]
+
+
     print(purchased_items)
+    print(f"items that got left to buy: {unpurchased_items}")
     print(f"this is the total {total}")
+
 
 
 calculate_total(items_purchased, grocery_list)
