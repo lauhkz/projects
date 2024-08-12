@@ -38,4 +38,28 @@ def count_vowels(text):
 
     print(unique_vowels)
 
-count_vowels(text)
+#count_vowels(text)
+
+first_ids = [1, 1, 1, 2, 2, 2, 3]
+second_ids = [1, 2]
+
+# first is my solution
+def find_missing_ids(first_ids, second_ids):
+    unique_ids = set()
+
+    for id in first_ids:
+        if id not in second_ids:
+            unique_ids.add(id)
+
+    list_ids = list(unique_ids)
+
+    return list_ids
+
+# shorter and easier solution
+
+def find_missing_ids_shorter(first_ids, second_ids):
+    s1 = set(first_ids)
+    s2 = set(second_ids)
+    return list(s1 - s2)
+
+# Returns 3
