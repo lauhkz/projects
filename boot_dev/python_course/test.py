@@ -1,61 +1,22 @@
-def primes(n: int):
+list_of_protagonists = [
+    {"Vagabond" : "Misashi"},
+    {"Berserk" : "Guts"},
+    {"Way of kings" : "Kaladin"},
+]
 
-    sieve = [True] * n
+list_of_protagonists2 = [
+    {"blue lock" : "Misashi"},
+    {"jujutsu kaisen" : "Guts"},
+    {"chainsaw man" : "denji"},
+]
 
-    res = []
-
-    for i in range(2, n):
-        if sieve[i]:
-            res.append(i)
-            for j in range(i * i, n, i):
-                sieve[j] = False
-
-    return res
-
-xs = primes(100)
-
-#print(xs)
-
-def area_of_circles(r):
-
-    pi = 3.14
-
-    result = pi * r * r
-
-    return result
-
-#print(area_of_circles(5))
-
-def main():
-    health = 10
-    armor = 5
-    add_armor(health, armor)
-
-def add_armor(h, a):
-    new_health = h + a
-    print_health(new_health)
-
-def print_health(new_health):
-    print(f"The player now has {new_health} health")
-
-# call entrypoint last
-# main()
-
-def nothing():
-    return None
-# doesn't give anything
-
-nothing()
-
-#print(0b10000)
+purchase_orders = [
+    {"price": 10.00, "money_available": 125.00},
+    {"price": 5.00, "money_available": 2.00},
+    {"price": 20.01, "money_available": 5.20},
+]
 
 
-number = 9
 
-def isPrime(number):
-    if number < 2:
-        return False
-    for i in range(2, number):
-        if (number % i == 0):
-            return False
-    return True
+
+

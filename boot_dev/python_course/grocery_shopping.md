@@ -7,3 +7,4 @@
 
    - [x] ~~total: the total cost of all the items that were purchased.~~
 
+
