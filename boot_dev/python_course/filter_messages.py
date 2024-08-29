@@ -1,4 +1,5 @@
-messages = ['darn it', "this dang thing won't work", 'lets fight one on one']
+messages = ["darn it", "this dang thing won't work", "lets fight one on one"]
+
 
 def filter_messages(messages):
     filtered_list = []
@@ -8,7 +9,7 @@ def filter_messages(messages):
     for message in messages:
         counter = 0
 
-        if ("dang" in message):
+        if "dang" in message:
             counter += 1
             count_of_dangs.append(counter)
 
@@ -21,18 +22,19 @@ def filter_messages(messages):
     del filtered_list[:]
     filtered_list.append(final_list)
 
-
     print(filtered_list)
     print(f"and these are the total of bad words sayed {count_of_dangs}")
+
 
 """
 that code transform all the elements in one string (without the "dang") and returns a list with the string
 almost ;-;
 """
 
-#filter_messages(messages)
+# filter_messages(messages)
 
 # this is the solution that accidentaly the bot gave me (i only wanted to know how to remove the whitespace left in the string)
+
 
 def working_filter_messages(messages):
     filtered_list = []
@@ -44,7 +46,7 @@ def working_filter_messages(messages):
         cleaned_words = []
 
         for word in words:
-            if (word == "dang"):
+            if word == "dang":
                 counter += 1
             else:
                 cleaned_words.append(word)
@@ -53,8 +55,7 @@ def working_filter_messages(messages):
         count_of_dangs.append(counter)
 
     print(filtered_list, count_of_dangs)
-    #return filtered_list, count_of_dangs
-
+    # return filtered_list, count_of_dangs
 
 
 working_filter_messages(messages)
