@@ -1,7 +1,20 @@
-items_purchased = ['milk', 'eggs', 'cheese', 'apples', 'bananas', 'lettuce', 'cereal']
-grocery_list = ['milk', 'oatmeal', 'eggs', 'cheese', 'apples', 'bananas', 'carrots', 'lettuce', 'potatoes', 'cereal', 'chicken']
+items_purchased = ["milk", "eggs", "cheese", "apples", "bananas", "lettuce", "cereal"]
+grocery_list = [
+    "milk",
+    "oatmeal",
+    "eggs",
+    "cheese",
+    "apples",
+    "bananas",
+    "carrots",
+    "lettuce",
+    "potatoes",
+    "cereal",
+    "chicken",
+]
 
-def calculate_total (items_purchased, grocery_list):
+
+def calculate_total(items_purchased, grocery_list):
     item_prices = {
         "milk": 2.50,
         "eggs": 3.25,
@@ -25,14 +38,12 @@ def calculate_total (items_purchased, grocery_list):
 
     for item in grocery_list:
         if item not in items_purchased:
-            print (f"items:{item}")
-            unpurchased_items[item] = grocery_list[item]
-
+            print(f"items:{item}")
+            unpurchased_items[item] = item
 
     print(purchased_items)
     print(f"items that got left to buy: {unpurchased_items}")
     print(f"this is the total {total}")
-
 
 
 calculate_total(items_purchased, grocery_list)
