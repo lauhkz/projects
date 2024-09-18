@@ -1,34 +1,26 @@
 # Assignment
-<!--
-Complete the bottom half of the main() function using two for-loops.
+Complete the `Card` class.
 
-    1. In the first for-loop, describe() all of the dragons, starting with the first dragon in the
-    list and ending with the last dragon in the list.
+  1. Define a constructor that takes `rank` and `suit` as parameters and sets `rank`, `suit`,
+  `rank_index`, and `suit_index` instance variables.
 
-    2. In the next for-loop, have each dragon breathe_fire at coordinate x=3, y=3. Pass in all of the
-    *other* dragons (not the one breathing fire) as the units parameters so we can see if they get hit.
+You will need the indexes of `ranks`, and `suits` to help you compare them against each other.
+Keep in mind that a `rank` and a `suit` are just strings within a list.
 
-Pass in the dragons in /ascending/ index order. For example, when Blue Dragon breathes fire, it should
-breathe fire on the other dragons in this order:
+  2. Overload the comparison operators:
 
-    - Green Dragon
-    - Red Dragon
-    - Black Dragon
--->
+Overload the following comparison operators:
 
-    * The Dragon's position (pos_x, pos_y) represents the center of the dragon
-    * The width and the height represents the total size of the dragon
+  * `==`: **eq**
+  * `>`: **gt**
+  * `<`: **it**
 
-Given this, how should we calculate the corners of the hitbox?
+## Ranking the cards
 
-Consider these questions:
+A card is "greather than" another card if it has a higher rank. However, if the ranks are the same,
+the card with the higher suit is "greather than" the other card. This same logic applies to the "less
+than" operator. The "equal to" operator should check that the rank AND suit are equal.
 
-1. If the dragon is at position (0,0) with a width of 4 and height of 2, where
-   would the top-left corner be?
-        -4, 2
+The suits and ranks are defined as global variables. *The lower the index, the lower the rank or suit*.
 
-2. Where would the bottom-right corner be in this case?
-        4,-2
-
-If i only have the center of my rectangle, how would i calculate the corners of this?
 
